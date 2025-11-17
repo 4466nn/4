@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorOS 16 智能侧边栏</title>
+    <!-- 引入Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- 引入样式文件 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="demo-title">ColorOS 16 智能侧边栏</h1>
+    <p class="demo-description">
+        这是一个ColorOS 16风格的智能侧边栏实现。从屏幕右侧滑动或点击右侧浮标可打开侧边栏。
+        侧边栏包含最近应用、快捷工具和自定义应用，支持浮窗模式和中转站功能。
+    </p>
+
+    <!-- ColorOS 16 智能侧边栏 -->
+    <div class="coloros-sidebar-container">
+        <!-- 侧边栏浮标 -->
+        <div class="sidebar-float-btn" id="sidebarFloatBtn">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        
+        <!-- 侧边栏主体 -->
+        <div class="sidebar-main" id="sidebarMain">
+            <!-- 顶部控制区 -->
+            <div class="sidebar-top">
+                <div class="scene-intelligent" id="sceneIntelligent">场景推荐</div>
+                <div class="transfer-station" id="transferStation">中转站</div>
+                <div class="recent-files" id="recentFiles">最近文件</div>
+            </div>
+            
+            <!-- 应用与工具区 -->
+            <div class="sidebar-content" id="sidebarContent" data-layout="single">
+                <!-- 最近应用 -->
+                <div class="content-group">
+                    <h3 class="group-title">最近应用</h3>
+                    <div class="app-list" id="recentAppList"></div>
+                </div>
+                
+                <!-- 快捷工具 -->
+                <div class="content-group">
+                    <h3 class="group-title">快捷工具</h3>
+                    <div class="tool-list" id="toolList"></div>
+                </div>
+                
+                <!-- 自定义应用 -->
+                <div class="content-group">
+                    <h3 class="group-title">我的应用</h3>
+                    <div class="custom-app-list" id="customAppList"></div>
+                </div>
+            </div>
+            
+            <!-- 底部操作区 -->
+            <div class="sidebar-bottom">
+                <div class="float-window-clone" id="floatWindowClone">浮窗分身</div>
+                <div class="sidebar-edit" id="sidebarEdit">编辑</div>
+                <div class="sidebar-hide" id="sidebarHide">收起</div>
+            </div>
+        </div>
+        
+        <!-- 浮窗容器 -->
+        <div class="float-window-container" id="floatWindowContainer"></div>
+    </div>
+    
+    <!-- 中转站面板 -->
+    <div class="transfer-station-panel" id="transferStationPanel">
+        <div class="transfer-station-header">
+            <div class="transfer-station-title">中转站</div>
+            <div class="transfer-station-close" id="transferStationClose">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="transfer-station-content" id="transferStationContent">
+            <!-- 中转站内容将动态生成 -->
+        </div>
+        <textarea class="transfer-station-input" id="transferStationInput" placeholder="输入文字或粘贴内容..."></textarea>
+        <div class="transfer-station-actions">
+            <button class="transfer-station-btn secondary" id="transferStationClear">清空</button>
+            <button class="transfer-station-btn primary" id="transferStationSave">保存</button>
+        </div>
+    </div>
+
+    <!-- 引入JavaScript文件 -->
+    <script src="script.js"></script>
+</body>
+</html>
