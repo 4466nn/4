@@ -297,7 +297,7 @@ const PerformanceMonitor = {
                 
                 const appData = app || {
                     name: '浮窗应用',
-                    url: 'https://www.example.com',
+                    url: '  https://m.baidu.com/ ',
                     color: '#0066FF'
                 };
                 
