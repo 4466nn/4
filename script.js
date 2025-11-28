@@ -503,7 +503,7 @@ const PerformanceMonitor = {
                     { name: '抖音', url: 'https://www.douyin.com', color: '#000000' },
                     { name: '淘宝', url: 'https://www.taobao.com', color: '#FF4400' },
                     { name: '微博', url: 'https://weibo.com', color: '#E6162D' },
-                    { name: '知乎', url: 'https://www.zhihu.com', color: '#0084FF' }
+                    { name: '腾讯云', url: 'https://start.qq.com/h5game/home?ADTAG=0', color: '#0084FF' }
                 ];
                 
                 this.elements.recentAppList.innerHTML = '';
@@ -557,7 +557,7 @@ const PerformanceMonitor = {
                     { name: '抖音', url: 'https://www.douyin.com', color: '#000000' },
                     { name: '淘宝', url: 'https://www.taobao.com', color: '#FF4400' },
                     { name: '微博', url: 'https://weibo.com', color: '#E6162D' },
-                    { name: '知乎', url: 'https://www.zhihu.com', color: '#0084FF' }
+                    { name: '腾讯云', url: 'https://start.qq.com/h5game/home?ADTAG=0', color: '#0084FF' }
                 ];
                 
                 this.elements.customAppList.innerHTML = '';
